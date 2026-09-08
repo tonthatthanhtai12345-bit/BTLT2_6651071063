@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Phiếu đăng ký tham gia chương trình khuyến mãi</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .register-box {
+        width: 620px;
+        border: 1px solid #999;
+        padding: 10px;
+        background-color: #eaf6e9;
+    }
+    h2 {
+        color: #006400;
+        text-align: center;
+        margin-top: 0;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    td {
+        padding: 6px;
+        vertical-align: middle;
+    }
+    tr {
+        border-bottom: 1px solid #cde6cd;
+    }
+    .label-col {
+        width: 200px;
+    }
+    input[type="text"] {
+        width: 95%;
+        box-sizing: border-box;
+    }
+    .btn-cell {
+        text-align: center;
+    }
+    #lblThongBao {
+        color: red;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<div class="register-box">
+    <h2>Phiếu đăng ký tham gia chương trình khuyến mãi</h2>
+    <form id="frmDangKy">
+        <table>
+            <tr>
+                <td class="label-col">Họ và tên</td>
+                <td><input type="text" id="txtHoTen" size="40"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input type="text" id="txtDiaChi" size="40"></td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td><input type="text" id="txtDienThoai" size="40"></td>
+            </tr>
+            <tr>
+                <td>Phái</td>
+                <td>
+                    <input type="radio" name="phai" id="rdoNam" value="Nam"> Nam
+                    <input type="radio" name="phai" id="rdoNu" value="Nữ" checked> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Nghề nghiệp</td>
+                <td>
+                    <select id="cboNgheNghiep">
+                        <option value="Bác sĩ">Bác sĩ</option>
+                        <option value="Kỹ sư">Kỹ sư</option>
+                        <option value="Giáo viên" selected>Giáo viên</option>
+                        <option value="Khác">Khác</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Chọn sản phẩm tham gia</td>
+                <td>
+                    <select id="lstSanPham" size="4" multiple>
+                        <option value="Kem đánh răng" selected>Kem đánh răng</option>
+                        <option value="Bột giặt">Bột giặt</option>
+                        <option value="Dầu gội đầu" selected>Dầu gội đầu</option>
+                        <option value="Sữa tắm">Sữa tắm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Số người dự đoán tham gia</td>
+                <td><input type="text" id="txtSoNguoi" size="40"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="btn-cell">
+                    <input type="button" id="btnDongY" value="Đồng ý" onclick="xuLyDangKy()">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div id="lblThongBao"></div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<script>
+    function xuLyDangKy() {
+        document.getElementById("lblThongBao").innerText = "Bạn đã đăng ký thành công!!!";
+    }
+</script>
+
+</body>
+</html>
