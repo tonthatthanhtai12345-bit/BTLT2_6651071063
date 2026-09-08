@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sử dụng các tag cơ bản</title>
+</head>
+<body>
+ 
+    <h1 align="center">Lập trình web với ngôn ngữ HTML</h1>
+ 
+    <h2 style="text-decoration: underline;">Giới thiệu</h2>
+ 
+    <p style="font-weight: bold;">Nội dung bài học</p>
+ 
+    <p align="center">
+        <i>"Lập trình web ... ngôn ngữ HTML"</i><br>
+        Đây là đoạn văn bản được canh giữa,<br>
+        sử dụng thẻ &lt;br&gt; để xuống dòng.
+    </p>
+ 
+</body>
+</html>
